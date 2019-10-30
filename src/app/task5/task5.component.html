@@ -1,0 +1,5 @@
+<select (change)="onThemeChange($event)">
+    <option *ngFor="let styleName of themes" [value]="styleName">
+        {{styleName}}
+    </option>
+</select>

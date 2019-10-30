@@ -1,0 +1,16 @@
+body {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+
+app-task1,
+app-task2,
+app-task3,
+app-task4,
+app-task5,
+app-task6 {
+  display: block;
+  padding: 1em;
+  border: 1px solid #3c47d6;
+}

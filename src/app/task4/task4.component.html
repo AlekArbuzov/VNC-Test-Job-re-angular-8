@@ -1,0 +1,14 @@
+<form action="">
+    <input
+            name="searchMessages"
+            type="text"
+            placeholder="Filter message by title..."
+            (input)="onInputChange($event)"
+    >
+</form>
+
+<ul>
+    <li *ngFor="let message of messages">
+        {{ message.title }}
+    </li>
+</ul>

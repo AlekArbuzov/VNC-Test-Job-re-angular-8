@@ -1,0 +1,29 @@
+<div>
+    <h2>Conversation with #{{ conversation.userName }}:</h2>
+
+    <table>
+        <tr *ngFor="let message of conversation.messages">
+            <td>Id: {{message.id}} </td>
+            <td>Message: {{ message.message }}</td>
+        </tr>
+    </table>
+
+</div>
+
+<hr/>
+
+<div style="margin: 10px;">
+    <h3>Add new Message</h3>
+    <form (ngSubmit)="createMessage()">
+        <input
+                [(ngModel)]="message"
+                placeholder="Enter your message"
+                name="message"
+                style="min-width: 250px;"
+        />
+
+        <button type="submit" class="btn btn-primary" style="Width:100px;">
+            Send
+        </button>
+    </form>
+</div>

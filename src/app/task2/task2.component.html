@@ -1,0 +1,4 @@
+<button *ngIf="!(this.userService.isUserLoggedIn() | async)" type="button" (click)="login()">Login</button>
+<button *ngIf="(this.userService.isUserLoggedIn() | async)" type="button" (click)="logOut()">Logout</button>
+
+<h3 *ngIf="(this.isUserOnline$ | async)">User is online and logged in</h3>
